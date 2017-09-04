@@ -1,0 +1,20 @@
+# ARABIC localization file for Sparky Live USB Creator.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Translated By AKAS 29/10/2015
+# Under the GNU GPL v2
+
+LOCAL1="Live USB Creator"
+LOCAL2="┼╬╩╤ ╟с▌с╟╘╔ ╟су╤╟╧ ╟╙╩┌у╟сх╟. \n┼╓█╪ ├ц▀э сс╤╠ц┌ ┼сь ╟с▐╟╞у╔ ╟с╤╞э╙э╔."
+LOCAL3="┼╬╩╤ ус▌ ╟с╟э╥ц ╟су╤╟╧ ╟╙╩┌у╟сх. \n┼╓█╪ ├ц▀э сс╤╠ц┌ ┼сь ╟с▐╟╞у╔ ╟с╤╞э╙э╔."
+LOCAL4="╙ц▌ э╩у ╟с╟╙╩╚╧╟с ╟с▀сэ ссус▌╟╩ ╟суц╠ц╧╔ ▌э ╟с▌с╟╘╔\n╚ус▌╟╩ ф┘╟у ╟с┼▐с╟┌\n\nсф ╩╙╩╪э┌ ┼э▐╟▌ х╨х ╟с┌усэ╔ ┌ф╧у╟ ╩╚╧├.\n\n┼╓█╪ ├ц▀э ссу╩╟╚┌╔."
+LOCAL5="╠╟╤э ╟с├ф ф╙╬ ╟сус▌╟╩ сс▌с╟╘╔. \n\n╟су╤╠ц ╟с┼ф╩┘╟╤ ... "
+LOCAL6="┼ф╩х╩ ┌усэ╔ ╟сф╙╬. \n┼╓█╪ ├ц▀э сс╬╤ц╠."
+LOCAL7="су э╩у ╟с┌╦ц╤ ┌сь ├э ▌с╟╘╔.\n\n╟су╤╠ц ┼╧╬╟с ╟с▌с╟╘╔ ц ┼┌╟╧╔ ╟су═╟цс╔."
+LOCAL8="┼╬╩╤ ╟с▌с╟╘╔"
+LOCAL9="┼╬╩╤ ус▌ ╟с╟э╥ц "
+LOCAL10="╟с╬╤ц╠"
+LOCAL11="┼ф╙╬ ╟сь ╟с▌с╟╘╔"
+
+### .desktop file to be translated too
+# Name[en_US]=Live USB Creator
+# Comment[en_US]=Make bootable Live USB disk

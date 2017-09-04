@@ -1,0 +1,22 @@
+# Arquivo de localização para Portugues do Brasil do Sparky Live USB Creator.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 26/01/2016
+# Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 29/01/2016
+# Sob a Licença GNU GPL v2
+# Última atualização 29/01/2016
+
+LOCAL1="Live USB Creator"
+LOCAL2="É necessário selecionar um driver USB (do tipo pendrive, etc.) para usar. \nClique em OK para retornar ao menu principal."
+LOCAL3="É necessário selecionar uma imagem ISO para usar. \nClique em OK para retornar ao menu principal."
+LOCAL4="Isso irá substituir completamente o conteúdo do seu drive USB, com um Sistema de Inicialização Live.\n\nNăo será possível anular esta operação assim que iniciar.\n\nClique em OK para continuar."
+LOCAL5="Iniciando a cópia dos arquivos para driver USB \n\nPor favor, espere..."
+LOCAL6="Cópia para a driver USB concluída. \nClique em OK para sair."
+LOCAL7="Não foram encontrados drivers USB.\n\nPor favor, insira um driver USB e tente novamente."
+LOCAL8="Escolha um driver USB"
+LOCAL9="Escolha uma Imagem ISO"
+LOCAL10="Sair"
+LOCAL11="Copia para a driver USB (pendrive, etc)"
+
+### Arquivo a ser traduzido também .desktop
+# Name[pt_BR]=Live USB Creator
+# Comment[pt_BR]=Fazer um  disco LIVE USB inicializável

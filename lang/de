@@ -1,0 +1,20 @@
+# German localization file for Sparky Live USB Creator.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/25
+# Under the GNU GPL v2
+# Translated to German by Pete B. 2015/10/29
+
+LOCAL1="Live USB Creator"
+LOCAL2="Bitte wähle ein USB-Speicher aus. \nKlick um ins Hauptmenü zu gelangen"
+LOCAL3="Bitte wähle ein ISO Image aus. \nKlick um ins Hauptmenü zu gelangen"
+LOCAL4="Das Erstellen des bootbaren Live-Systems überschreibt\nalle auf dem USB-Speicher befindlichen Daten.\n\nDieser Vorgang kann nicht rückgängig gemacht werden!\n\nKlicke auf OK um fortzufahren"
+LOCAL5="Die Dateien werden jetzt kopiert. \n\nBitte warten..."
+LOCAL6="Kopiervorgang abgeschlossen. \nZum Beenden auf OK klicken"
+LOCAL7="Es wurde kein USB-Speicher gefunden.\n\nBitte ein USB-Speicher anschließen und erneut versuchen."
+LOCAL8="Wähle ein USB-Speicher"
+LOCAL9="Wähle ein ISO Image"
+LOCAL10="Beenden"
+LOCAL11="Kopiere ISO auf USB-Speicher"
+
+### .desktop file to be translated too
+# Name[de_DE]=Live USB Creator
+# Comment[de_DE]=Erstellt einen bootbaren USB-Speicher mit Live-System

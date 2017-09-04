@@ -1,0 +1,26 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Live USB Creator
+Name[es_AR]=Creador de Live USB
+Name[fr_FR]=Créateur de Live USB
+Name[ja_JP]=Live USB クリエーター
+Name[pl_PL]=Kreator dysku Live USB
+Name[sv_SE]=Live-USB-skapare
+Comment=Make bootable Live USB disk
+Comment[de_DE]=Erstellt einen bootbaren USB-Speicher mit Live-System
+Comment[es_AR]=Hace arrancable un disco Live USB
+Comment[fr_FR]=Créer un disque Live USB démarrable
+Comment[it_IT]=Rendi un Disco USB avviabile
+Comment[ja_JP]=ライブ起動できる USB ディスクを生成します
+Comment[pl_PL]=Utwórz botowalny dysk Live USB
+Comment[pt_BR]=Fazer um  disco LIVE USB inicializável
+Comment[pt_PT]=Faça disco de arranque USB
+Comment[sv_SE]=Skapar bootbar Live-USB-enhet
+Exec=remsu /usr/bin/sparky-live-usb-creator
+Icon=usb-creator
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+

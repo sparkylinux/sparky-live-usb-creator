@@ -1,0 +1,21 @@
+# Japanese localization file for Sparky Live USB Creator.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2015/01/06
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+
+LOCAL1="Live USB クリエーター"
+LOCAL2="使用する USB キーを選択する必要があります。\nOK でメインメニューへ戻ります。"
+LOCAL3="使用する ISO イメージを選択する必要があります。\nOK でメインメニューへ戻ります。"
+LOCAL4="これは完全に USB ドライブの内容を交換します。\n起動可能なライブシステムになります。\n\n動作したら、この操作を元に戻すことはできません。\n\nOK のクリックで続けます。"
+LOCAL5="USB キーへファイルをコピーしています。\n\nお待ち下さい... "
+LOCAL6="USB キーへコピーしました。\nOK のクリックで終了します。"
+LOCAL7="USB キーが見つかりません。\n\nUSB キーを挿して、再度行って下さい。"
+LOCAL8="USB キーを選んで下さい"
+LOCAL9="ISO イメージを選んで下さい"
+LOCAL10="終了"
+LOCAL11="USB キーへコピー"
+
+### .desktop file to be translated too
+# Name[ja_JP]=Live USB クリエーター
+# Comment[ja_JP]=ライブ起動できる USB ディスクを生成します

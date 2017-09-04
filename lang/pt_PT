@@ -1,0 +1,20 @@
+# Arquivo de localização para Portugues de Portugal do Sparky Live USB Creator.
+# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Tuesday 26 January 21:46:00 WET 2016
+# Sob a Licença GNU GPL v2
+# Última atualização Tuesday 26 January 21:46:00 WET 2016
+
+LOCAL1="Live USB Creator"
+LOCAL2="É necessário selecionar uma driver usb para usar. \nClique em OK para retornar ao menu principal."
+LOCAL3="É necessário selecionar uma imagem ISO para usar. \nClique em OK para retornar ao menu principal."
+LOCAL4="Isso irá substituir completamente o conteúdo do seu drive USB com o Sistema de Arranque.\n\nNăo será possível anular esta operação assim que iniciar.\n\nClique em OK para continuar."
+LOCAL5="Cópia de arquivos para driver USB a iniciar \n\nPor favor, espere..."
+LOCAL6="Copia para a driver USB concluída. \nClique em OK para sair."
+LOCAL7="Não foram encontrados drivers USB.\n\nPor favor, insira uma driver USB e tente novamente."
+LOCAL8="Escolha uma driver USB"
+LOCAL9="Escolha a Imagem ISO"
+LOCAL10="Sair"
+LOCAL11="Copia para a dirver USB"
+
+### Arquivo a ser traduzido também .desktop
+# Name[pt_PT]=Live USB Creator
+# Comment[pt_PT]=Faça disco de arranque USB
