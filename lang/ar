@@ -2,7 +2,7 @@
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
 # Translated By AKAS 29/10/2015
 # Under the GNU GPL v2
-
+# Last update 2018/08/02 by pavroo
 LOCAL1="Live USB Creator"
 LOCAL2="≈Œ — «·›·«‘… «·„—«œ «” ⁄„«·Â«. \n≈÷€ÿ √ÊﬂÌ ··—ÃÊ⁄ ≈·Ï «·ﬁ«∆„… «·—∆Ì”Ì…."
 LOCAL3="≈Œ — „·› «·«Ì“Ê «·„—«œ «” ⁄„«·Â. \n≈÷€ÿ √ÊﬂÌ ··—ÃÊ⁄ ≈·Ï «·ﬁ«∆„… «·—∆Ì”Ì…."
@@ -14,7 +14,6 @@ LOCAL8="≈Œ — «·›·«‘…"
 LOCAL9="≈Œ — „·› «·«Ì“Ê "
 LOCAL10="«·Œ—ÊÃ"
 LOCAL11="≈‰”Œ «·Ï «·›·«‘…"
-
 ### .desktop file to be translated too
 # Name[en_US]=Live USB Creator
 # Comment[en_US]=Make bootable Live USB disk

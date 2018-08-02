@@ -3,8 +3,7 @@
 # Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 26/01/2016
 # Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 29/01/2016
 # Sob a Licença GNU GPL v2
-# Última atualização 29/01/2016
-
+# Last update 2018/08/02 by pavroo
 LOCAL1="Live USB Creator"
 LOCAL2="É necessário selecionar um driver USB (do tipo pendrive, etc.) para usar. \nClique em OK para retornar ao menu principal."
 LOCAL3="É necessário selecionar uma imagem ISO para usar. \nClique em OK para retornar ao menu principal."
@@ -16,7 +15,6 @@ LOCAL8="Escolha um driver USB"
 LOCAL9="Escolha uma Imagem ISO"
 LOCAL10="Sair"
 LOCAL11="Copia para a driver USB (pendrive, etc)"
-
 ### Arquivo a ser traduzido também .desktop
 # Name[pt_BR]=Live USB Creator
 # Comment[pt_BR]=Fazer um  disco LIVE USB inicializável

@@ -2,7 +2,7 @@ Upstream Author(s):
     Paweł "pavroo" Pijanowski <pavroo@onet.eu> 
 
 Files: *
-    Copyright (C) 2013,2014,2015,2016,2017 Paweł Pijanowski
+    Copyright (C) 2013-2018 Paweł Pijanowski
     License: GPL-2
 
 File: ar
@@ -19,6 +19,10 @@ File: es
 
 File: fr
     Copyright (C) 2016 hiver <hiver@club-internet.fr>
+    License: GPL-2
+
+File: id_ID
+    Copyright (C) 2018 les kompie
     License: GPL-2
 
 File: it

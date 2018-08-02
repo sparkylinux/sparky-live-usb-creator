@@ -1,8 +1,7 @@
 ﻿# Fichier de localisation française de Sparky Live USB Creator.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
 # Sous licence GNU GPL v2
-# Dernière mise à jour 2016/06/05
-
+# Last update 2018/08/02 by pavroo
 LOCAL1="Créateur de disque Live USB"
 LOCAL2="Vous devez sélectionner la clé usb à utiliser. \nCliquez sur OK pour revenir au menu principal."
 LOCAL3="Vous devez sélectionner l'image ISO à utiliser. \nCliquez sur OK pour revenir au menu principal."
@@ -14,7 +13,6 @@ LOCAL8="choisissez la clé USB"
 LOCAL9="Choisissez l'image ISO"
 LOCAL10="Quitter"
 LOCAL11="Copier sur la clé USB"
-
 ### .desktop file to be translated to
 # Name[fr_FR]=Créateur de Live USB
 # Comment[fr_FR]=créer un disque Live USB démarrable

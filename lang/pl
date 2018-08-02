@@ -1,9 +1,8 @@
 # Polish localization file for Sparky Live USB Creator.
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
 # Under the GNU GPL v2
-# Last update 2015/10/21
+# Last update 2018/08/02 by pavroo
 # Translated to Polish by pavroo
-
 LOCAL1="Kreator dysku Live USB"
 LOCAL2="Musisz wybrać dysk USB. \nKliknij OK aby powrócić do głównego menu."
 LOCAL3="Musisz wybrać obraz ISO. \nKliknij OK aby powrócić do głównego menu."
@@ -15,7 +14,6 @@ LOCAL8="Wybierz dysk USB"
 LOCAL9="Wybierz obraz ISO"
 LOCAL10="Zakończ"
 LOCAL11="Kopiuj na dysk USB"
-
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=Kreator dysku Live USB
 # Comment[pl_PL]=Utwórz botowalny dysk Live USB

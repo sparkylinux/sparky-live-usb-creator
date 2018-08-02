@@ -1,8 +1,7 @@
 # Archivo de localización en español para Sparky Live USB Creator.
 # Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/23
 # Bajo la licencia GNU GPL v2
-# Ultima actualización 2015/12/23
-
+# Last update 2018/08/02 by pavroo
 LOCAL1="Creador de Live USB"
 LOCAL2="Ud tiene que elegir la llave USB a usar. \nHacer clic en OK para volver al menú principal."
 LOCAL3="Ud tiene que elegir la imagen ISO a usar. \nHacer clic en OK para volver al menú principal."
@@ -14,7 +13,6 @@ LOCAL8="Elegir una llave USB"
 LOCAL9="Elegir una imagen ISO"
 LOCAL10="Salir"
 LOCAL11="Copiar a la llave USB"
-
 ### .desktop file to be translated too
 # Name[es_AR]=Creador de Live USB
 # Comment[es_AR]=Hace arrancable un disco Live USB

@@ -1,8 +1,7 @@
 # Svensk språkfil för Sparky Live-USB-skaparen.
 # Copyright 2015 Johnny Rosenberg <johnny.a.rosenberg@gmail.com> 2015-10-22
 # Under GNU GPL v2
-# Senast uppdaterad 2015-10-22
-
+# Last update 2018/08/02 by pavroo
 LOCAL1="Live-USB-skapare"
 LOCAL2="Du måste välja en USB-disk.\nKlicka OK för att återvända till huvudmenyn."
 LOCAL3="Du måste välja en ISO-avbild.\nKlicka OK för att återvända till huvudmenyn."
@@ -14,7 +13,6 @@ LOCAL8="Välj en USB-enhet"
 LOCAL9="Välj en ISO-avbild"
 LOCAL10="Avsluta"
 LOCAL11="Kopiera till USB-enhet"
-
 ### .desktop file to be translated too
 # Name[sv_SE]=Live-USB-skapare
 # Comment[sv_SE]=Skapar bootbar Live-USB-enhet

@@ -1,8 +1,7 @@
 # English localization file for Sparky Live USB Creator.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
 # Under the GNU GPL v2
-# Last update 2016/02/05
-
+# Last update 2018/08/02 by pavroo
 LOCAL1="Live USB Creator"
 LOCAL2="You must select a usb key to use. \nClick OK to return to main menu."
 LOCAL3="You must select an ISO image to use. \nClick OK to return to main menu."
@@ -14,7 +13,6 @@ LOCAL8="Choose a USB Key"
 LOCAL9="Choose a ISO Image"
 LOCAL10="Quit"
 LOCAL11="Copy to USB Key"
-
 ### .desktop file to be translated to
 # Name[en_US]=Live USB Creator
 # Comment[en_US]=Make bootable Live USB disk
