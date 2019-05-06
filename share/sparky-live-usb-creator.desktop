@@ -18,6 +18,7 @@ Comment[ja]=ライブ起動できる USB ディスクを生成します
 Comment[pl]=Utwórz botowalny dysk Live USB
 Comment[pt_BR]=Fazer um  disco LIVE USB inicializável
 Comment[pt_PT]=Faça disco de arranque USB
+Comment[ru]=Создать загрузочный Live USB-накопитель
 Comment[sv]=Skapar bootbar Live-USB-enhet
 Exec=remsu /usr/bin/sparky-live-usb-creator
 Icon=usb-creator
