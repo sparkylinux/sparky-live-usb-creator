@@ -1,0 +1,18 @@
+# Magyar nyelvi fájl a Sparky Live USB készítőhöz.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# GNU GPL v2 szerint
+# Utolsó frissítés pavroo 2018/08/02
+LOCAL1="Live USB készítő"
+LOCAL2="Ki kell válassza a használni kívánt usb meghajtót [pendrive-ot]. \nKattintson az OK-ra a főmenübe visszatéréshez."
+LOCAL3="Ki kell válassza a használni kívánt ISO képfájlt. \nKattintson az OK-ra a főmenübe visszatéréshez."
+LOCAL4="Ez teljesen kicseréli az USB-meghajtó tartalmát\nA Bootable Live Systemre.\n\nHa a művelet elkezdődött, nem tudja leállítani/megszakítani.\n\nKattintson az OK-ra a folytatáshoz."
+LOCAL5="Fájlok másolása zajlik az USB-meghajtóra. \n\nKérjük, váron..."
+LOCAL6="A fájlok másolása az USB-meghajtóra befejeződött. \nKattintson az OK-ra a kilépéshez."
+LOCAL7="Nem található USB-meghajtó.\n\nKérjük, helyezzen be egy USB-meghajtót és próbálja újra."
+LOCAL8="Válasszon USB-meghajtót"
+LOCAL9="Válasszon ISO-képfájlt"
+LOCAL10="Kilépés"
+LOCAL11="Másolás az USB-meghajtóra"
+### .asztalfájl lefordítandó
+# Név[HU]=Live USB készítő
+# Megjegyzés[HU]=Bootolható Live USB lemezt készít
