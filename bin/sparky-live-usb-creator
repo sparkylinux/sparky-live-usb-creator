@@ -5,7 +5,7 @@
 #
 # Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
 # Copyright 2014-2019 by Paweł Pijanowski under the GPL V2
-# Last update 2019/08/18 by pavroo
+# Last update 2019/11/17 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
@@ -13,6 +13,8 @@ if [ "`cat /etc/default/locale | grep ar`" != "" ]; then
 . $DEFLOCDIR/ar
 elif [ "`cat /etc/default/locale | grep de`" != "" ]; then
 . $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep el`" != "" ]; then
+. $DEFLOCDIR/el
 elif [ "`cat /etc/default/locale | grep es`" != "" ]; then
 . $DEFLOCDIR/es
 elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then
@@ -20,7 +22,7 @@ elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then
 elif [ "`cat /etc/default/locale | grep hu`" != "" ]; then
 . $DEFLOCDIR/hu
 elif [ "`cat /etc/default/locale | grep id_ID`" != "" ]; then
-. $DEFLOCDIR/it_ID
+. $DEFLOCDIR/id_ID
 elif [ "`cat /etc/default/locale | grep it`" != "" ]; then
 . $DEFLOCDIR/it
 elif [ "`cat /etc/default/locale | grep ja`" != "" ]; then
