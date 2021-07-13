@@ -2,7 +2,7 @@ Upstream Author(s):
     Paweł "pavroo" Pijanowski <pavroo@onet.eu> 
 
 Files: *
-    Copyright (C) 2013-2020 Paweł Pijanowski
+    Copyright (C) 2013-2021 Paweł Pijanowski
     License: GPL-2
 
 File: ar
@@ -56,6 +56,10 @@ File: ru
 
 File: se
     Copyright (C) 2015 Johnny Rosenberg <johnny.a.rosenberg@gmail.com>
+    License: GPL-2
+
+File: zh_CN
+    Copyright (C) 2021 OkayPJ
     License: GPL-2
 
 File: sparky-live-usb-creator is based on live-usb-creator
