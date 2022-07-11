@@ -1,18 +1,19 @@
 # File di localizzazione in italiano per Sparky Live USB Creator.
 # Copyright 2015 Carlo Troiani <troianicarlo@gmail.com> 21/10/2015
 # Rilasciato sotto licenza GNU GPL v2
+# Ultimo aggiornamento 2022/05/18 by Yodel Sinatra <mastodon.uno/@YodelSinatra>
 # Last update 2018/08/02 by pavroo
 LOCAL1="Live USB Creator"
-LOCAL2="Devi selezionare la Penna USB da utilizzare. \nClicca su OK per tornare al menù principale."
-LOCAL3="Devi selezionare l'immagine ISO da utilizzare. \nClicca su OK per tornare al menù principale."
-LOCAL4="Attenzione: così andrai a rimpiazzare il contenuto del tuo drive USB\ncon il nuovo Sistema Live.\n\nNon sarai in grado di annullare l'operazione una volta iniziata.\n\nClicca su OK per continuare."
-LOCAL5="Sto copiando i files sulla Penna USB adesso. \n\nPrego attendi... "
-LOCAL6="L'operazione è terminata. \nClicca su OK per uscire."
-LOCAL7="Non ho trovato drive USB.\n\nPrego, inserisci una Penna USB e prova di nuovo."
-LOCAL8="Scegli una Penna USB"
-LOCAL9="Scegli un'Immagine ISO"
+LOCAL2="Devi selezionare la penna USB da utilizzare. \nClicca OK per tornare al menù principale."
+LOCAL3="Devi selezionare l'immagine ISO da utilizzare. \nClicca OK per tornare al menù principale."
+LOCAL4="Attenzione: continuando, tutto il contenuto del tuo drive USB verrà cancellato\ncon il nuovo Sistema Live.\n\nNon sarai in grado di annullare l'operazione una volta iniziata.\n\nClicca OK per continuare."
+LOCAL5="Sto copiando i files sulla penna USB adesso. \n\nPer favore attendi... "
+LOCAL6="L'operazione è terminata. \nClicca OK per uscire."
+LOCAL7="Non ho trovato drive USB.\n\nPer favore, inserisci una penna USB e prova di nuovo."
+LOCAL8="Scegli una penna USB"
+LOCAL9="Scegli un'immagine ISO"
 LOCAL10="Esci"
-LOCAL11="Trascrivi l'Immagine sulla Penna USB"
+LOCAL11="Trascrivi l'immagine sulla penna USB"
 ### .desktop file to be translated too
 # Name[it_IT]=Live USB Creator
-# Comment[it_IT]=Rendi un Disco USB avviabile
+# Comment[it_IT]=Rendi una penna USB avviabile
