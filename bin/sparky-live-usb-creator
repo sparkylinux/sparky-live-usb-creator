@@ -4,8 +4,8 @@
 # Using yad for gui calls
 #
 # Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
-# Copyright 2014-2022 Paweł Pijanowski under the GPL V2
-# Last update 2022/07/11 by pavroo
+# Copyright 2014-2023 Paweł Pijanowski under the GPL V2
+# Last update 2023/01/18 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
@@ -53,7 +53,8 @@ TITLETEXT="$LOCAL1"
 TEXT="--text="
 FILESELECTION="--file "
 OKBUTTON="--button=Ok:0 "
-
+DIALOGZEN="zenity --progress --pulsate --auto-close --auto-kill --no-cancel --window-icon=/usr/share/icons/sparky/persistent/sparky48.png --width=450 --height=150"
+TITLEZEN="--title="
 testroot="`whoami`"
 if [ "$testroot" != "root" ]; then
 	echo "must me root... exiting..."
@@ -80,10 +81,11 @@ fi
 umount `mount | grep $1 | awk '{print $1}'`
 
 #do the copy
-$DIALOG $TITLE"$TITLETEXT" $TEXT"$LOCAL5\n" --no-buttons --progress --pulsate --auto-close --auto-kill &
-dd if=$2 of=/dev/$1 bs=4M && sync
-
-killall -KILL yad
+#$DIALOG $TITLE"$TITLETEXT" $TEXT"$LOCAL5\n" --no-buttons --progress --pulsate --auto-close --auto-kill &
+#dd if=$2 of=/dev/$1 bs=4M && sync
+#killall -KILL yad
+(dd if=$2 of=/dev/$1 bs=4M && sync) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
+sleep 1
 
 $DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL6" $OKBUTTON
 

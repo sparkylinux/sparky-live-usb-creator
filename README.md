@@ -1,7 +1,7 @@
 Live USB Creator
 This tool will make a bootable Live Linux USB disk. It is a GUI frontend for dd command
 
-Copyright (C) 2013-2022 Paweł Pijanowski and others, see copyright file.
+Copyright (C) 2013-2023 Paweł Pijanowski and others, see copyright file.
 License: GPL-2
 
 This program is free software: you can redistribute it and/or modify
@@ -25,6 +25,7 @@ grep
 mount
 sparky-remsu
 yad
+zenity
 
 Install:
 -------------

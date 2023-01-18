@@ -16,20 +16,15 @@
 
 if [ "$1" = "uninstall" ]; then
 	rm -f /usr/bin/sparky-live-usb-creator
-	rm -f /usr/lib/sparkycenter/system/sparky-live-usb-creator.desktop
 	rm -f /usr/share/applications/sparky-live-usb-creator.desktop
-	rm -f /usr/share/menu/sparky-live-usb-creator
 	rm -rf /usr/share/sparky/sparky-live-usb-creator
+	rm -rf /usr/share/icons/sparky/persistent
 else
 	cp bin/* /usr/bin/
-	if [ ! -d /usr/lib/sparkycenter/system ]; then
-		mkdir -p /usr/lib/sparkycenter/system
-	fi
-	cp share/sparky-live-usb-creator.desktop /usr/lib/sparkycenter/system/
 	cp share/sparky-live-usb-creator.desktop /usr/share/applications/
-	cp share/sparky-live-usb-creator /usr/share/menu/
 	if [ ! -d /usr/share/sparky/sparky-live-usb-creator ]; then
 		mkdir -p /usr/share/sparky/sparky-live-usb-creator
 	fi
 	cp lang/* /usr/share/sparky/sparky-live-usb-creator/
+	cp share/sparky48.png /usr/share/icons/sparky/persistent/sparky48.png
 fi
