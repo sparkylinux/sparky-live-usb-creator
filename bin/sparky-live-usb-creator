@@ -5,7 +5,7 @@
 #
 # Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
 # Copyright 2014-2023 Paweł Pijanowski under the GPL V2
-# Last update 2023/01/18 by pavroo
+# Last update 2023/01/19 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
@@ -78,13 +78,15 @@ if [ $? != 0 ]; then
 	mainmenu
 fi
 
-umount `mount | grep $1 | awk '{print $1}'`
+#umount `mount | grep $1 | awk '{print $1}'`
+UMDEVS=`mount | grep $1 | awk '{print $1}'`
+umount "$UMDEVS"
 
 #do the copy
 #$DIALOG $TITLE"$TITLETEXT" $TEXT"$LOCAL5\n" --no-buttons --progress --pulsate --auto-close --auto-kill &
 #dd if=$2 of=/dev/$1 bs=4M && sync
 #killall -KILL yad
-(dd if=$2 of=/dev/$1 bs=4M && sync) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
+$(dd if=$2 of=/dev/$1 bs=4M && sync) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
 sleep 1
 
 $DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL6" $OKBUTTON
