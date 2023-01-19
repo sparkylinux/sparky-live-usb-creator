@@ -79,8 +79,13 @@ if [ $? != 0 ]; then
 fi
 
 #umount `mount | grep $1 | awk '{print $1}'`
-UMDEVS=`mount | grep $1 | awk '{print $1}'`
-umount "$UMDEVS"
+UMDEVS3=`mount | grep $1 | awk '{print $1}' | tail -n1 | grep 3`
+if [ "$UMDEVS3" != "" ]; then
+	umount "$UMDEVS3"
+	sleep 1
+fi
+UMDEVS1=`mount | grep $1 | awk '{print $1}'`
+umount "$UMDEVS1"
 
 #do the copy
 #$DIALOG $TITLE"$TITLETEXT" $TEXT"$LOCAL5\n" --no-buttons --progress --pulsate --auto-close --auto-kill &
