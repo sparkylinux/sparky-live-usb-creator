@@ -1,0 +1,36 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Live USB Creator Persistence
+Name[el]=Δημιουργία Live USB Persistence
+Name[es]=Creador de Live USB Persistence
+Name[fr]=Créateur de Live USB Persistence
+Name[hu]=Live USB készítő Persistence
+Name[id]=Pembuat Live USB Persistence
+Name[ja]=Live USB 作成ツール Persistence
+Name[pl]=Kreator dysku Live USB Persistence
+Name[sv]=Live-USB-skapare Persistence
+Name[zh_CN]=Live USB 创建工具 Persistence
+Comment=Make bootable Live USB disk Persistence
+Comment[de]=Erstellt einen bootbaren USB-Speicher mit Live-System Persistence
+Comment[el]=Δημιουργήστε εκκινήσιμο Live USB στικ Persistence
+Comment[es_AR]=Hace arrancable un disco Live USB Persistence
+Comment[es_ES]=Crear un disco Live USB arrancable Persistence
+Comment[fr]=Créer un disque Live USB démarrable Persistence
+Comment[hu]=Bootolható Live USB lemezt készít Persistence
+Comment[id]=Membuat Live USB flashdisk yang bisa di-boot Persistence
+Comment[it]=Rendi una penna USB avviabile Persistence
+Comment[ja]=ライブ起動できる USB ディスク（メモリスティック）を作成 Persistence
+Comment[pl]=Utwórz botowalny dysk Live USB Persistence
+Comment[pt_BR]=Fazer um  disco LIVE USB inicializável Persistence
+Comment[pt_PT]=Faça disco de arranque USB Persistence
+Comment[ru]=Создать загрузочный Live USB-накопитель Persistence
+Comment[sv]=Skapar bootbar Live-USB-enhet Persistence
+Comment[zh_CN]=制作可启动的临场（Live）U 盘 Persistence
+Exec=remsu /usr/bin/sparky-live-usb-creator-persistence
+Icon=usb-creator
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+

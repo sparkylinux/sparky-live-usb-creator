@@ -1,0 +1,158 @@
+#!/bin/bash
+
+# Copy to USB Key Tool Copyright 2009,2011 by Tony Brijeski under the GPL V2
+# Using yad for gui calls
+#
+# Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
+# Copyright 2014-2023 Paweł Pijanowski under the GPL V2
+# Last update 2023/01/19 by pavroo
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
+if [ "`cat /etc/default/locale | grep LANG= | grep ar`" != "" ]; then
+. $DEFLOCDIR/ar
+elif [ "`cat /etc/default/locale | grep LANG= | grep de`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep LANG= | grep el`" != "" ]; then
+. $DEFLOCDIR/el
+elif [ "`cat /etc/default/locale | grep LANG= | grep es`" != "" ]; then
+	if [ "`cat /etc/default/locale | grep LANG= | grep es_AR`" != "" ]; then
+. $DEFLOCDIR/es_AR
+	else
+. $DEFLOCDIR/es_ES
+	fi
+elif [ "`cat /etc/default/locale | grep LANG= | grep fr`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep LANG= | grep hu`" != "" ]; then
+. $DEFLOCDIR/hu
+elif [ "`cat /etc/default/locale | grep LANG= | grep id_ID`" != "" ]; then
+. $DEFLOCDIR/id_ID
+elif [ "`cat /etc/default/locale | grep LANG= | grep it`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep LANG= | grep ja`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep LANG= | grep pl`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep LANG= | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep LANG= | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+elif [ "`cat /etc/default/locale | grep LANG= | grep ru`" != "" ]; then
+. $DEFLOCDIR/ru
+elif [ "`cat /etc/default/locale | grep LANG= | grep sv`" != "" ]; then
+. $DEFLOCDIR/se
+elif [ "`cat /etc/default/locale | grep LANG= | grep zh_CN`" != "" ]; then
+. $DEFLOCDIR/zh_CN
+else
+. $DEFLOCDIR/en
+fi
+
+DIALOG="`which yad` --width 450"
+DIALOGFIX="`which yad` --width 450 --fixed"
+TITLE="--always-print-result --dialog-sep --window-icon=/usr/share/icons/sparky/persistent/sparky48.png --image=/usr/share/icons/sparky/persistent/sparky48.png --title="
+TITLETEXT="$LOCAL1 Persistence"
+TEXT="--text="
+FILESELECTION="--file "
+OKBUTTON="--button=Ok:0 "
+DIALOGZEN="zenity --progress --pulsate --auto-close --auto-kill --no-cancel --window-icon=/usr/share/icons/sparky/persistent/sparky48.png --width=450 --height=150"
+TITLEZEN="--title="
+testroot="`whoami`"
+if [ "$testroot" != "root" ]; then
+	echo "must me root... exiting..."
+	exit 1
+fi
+
+copymenu () {
+if [ "$1" = "(null)" ]; then
+	$DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL2"
+	mainmenu
+fi
+
+if [ "$2" = "(null)" ]; then
+	$DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL3"
+	mainmenu
+fi
+
+$DIALOGFIX $TITLE"$TITLETEXT" $TEXT"\n$LOCAL4\n\n$LOCAL12 $FREESIZE MB\n$LOCAL13\n$LOCAL14"
+
+if [ $? != 0 ]; then
+	mainmenu
+fi
+
+### STEP1: recreate iso image adding persitence to live boot
+if [ -d /tmp/redir ]; then
+	rm -rf /tmp/redir
+fi
+mkdir -p /tmp/redir
+cd /tmp/redir
+$(LANG=C sed 's/quiet splash/persistence /;s/SparkyLinux/Persistence/' $2 > sparkylinux-persistent.iso) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL15"
+sleep 1
+if [ ! -f /tmp/redir/sparkylinux-persistent.iso ]; then
+	$DIALOG $TITLE"$TITLETEXT" $OKBUTTON $TEXT"\n$LOCAL16"
+	exit 0
+fi
+
+### STEP2: copy new iso image to usb  
+#umount `mount | grep $1 | awk '{print $1}'`
+UMDEVS3=`mount | grep $1 | awk '{print $1}' | tail -n1 | grep 3`
+if [ "$UMDEVS3" != "" ]; then
+	umount "$UMDEVS3"
+	sleep 1
+fi
+UMDEVS1=`mount | grep $1 | awk '{print $1}'`
+umount "$UMDEVS1"
+#do the copy
+$(dd if=/tmp/redir/sparkylinux-persistent.iso of=/dev/$1 bs=4M && sync
+sleep 10) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
+sleep 1
+
+### STEP3: create 3rd persistent partition on usb
+#TRYMOUNT=`cat /proc/mounts | grep /dev/$DEVS`
+#if [ "$TRYMOUNT" = "" ]; then
+#	$DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
+#	exit 0
+#fi
+# preper 3rd partition on USB
+$(fdisk /dev/$DEVS <<<$'n\np\n\n\n\nw'
+) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
+sleep 1
+GET3PART=`blkid | grep /dev/$DEVS | grep 3: | awk -F " " '{print $1}' | cut -d ":" -f 1`
+$(mkfs.ext4 -L persistence $GET3PART
+mount $GET3PART /mnt
+echo '/ union' >/mnt/persistence.conf
+sync
+umount /mnt
+) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
+rm -rf /tmp/redir
+$DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL6" $OKBUTTON
+}
+
+mainmenu () {
+DEVS=""
+DEVS=`ls -l /dev/disk/by-path/*usb* | grep -v "part" | awk '{print $NF}' | awk -F "/" '{print $NF}'`
+if [ "$DEVS" != "" ]; then
+	for i in $DEVS; do
+		USBDRIVESIZE=`grep -m 1 "$i" /proc/partitions | awk '{print $3}'`
+		USBDRIVES="$USBDRIVES!$i-$USBDRIVESIZE"
+	done
+else
+	$DIALOG $TITLE"$TITLETEXT" $OKBUTTON $TEXT"\n$LOCAL7"
+	exit 0
+fi
+
+CHOICES=`$DIALOGFIX $TITLE"$TITLETEXT" $TEXT"$LOCAL22\n -Sparky desktop: 2GB\n -Sparky Special Editions: 4GB\n$LOCAL14" --form --field="$LOCAL8:CB" $USBDRIVES --field="$LOCAL9:FL" --button="$LOCAL10:2" --button="$LOCAL11:1"`
+retval="$?"
+
+if [ "$retval" = "1" ]; then
+	USBDRIVE=`echo $CHOICES | cut -d "|" -f 1 | cut -d "-" -f 1`
+	PICKSOURCE=`echo $CHOICES | cut -d "|" -f 2`
+	SOURCESIZE=`ls -s $PICKSOURCE | awk -F " " '{print $1}'`
+	FREESIZEKB=`expr $USBDRIVESIZE - $SOURCESIZE`
+	FREESIZE=`echo $FREESIZEKB | while read KB dummy;do echo $((KB/1024));done`
+	copymenu $USBDRIVE $PICKSOURCE
+else
+	exit 0
+fi
+}
+
+mainmenu

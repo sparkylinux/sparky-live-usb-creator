@@ -1,0 +1,27 @@
+# ARABIC localization file for Sparky Live USB Creator.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Translated By AKAS 29/10/2015
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+LOCAL1="Live USB Creator"
+LOCAL2="ÅÎÊÑ ÇáİáÇÔÉ ÇáãÑÇÏ ÇÓÊÚãÇáåÇ. \nÅÖÛØ Ãæßí ááÑÌæÚ Åáì ÇáŞÇÆãÉ ÇáÑÆíÓíÉ."
+LOCAL3="ÅÎÊÑ ãáİ ÇáÇíÒæ ÇáãÑÇÏ ÇÓÊÚãÇáå. \nÅÖÛØ Ãæßí ááÑÌæÚ Åáì ÇáŞÇÆãÉ ÇáÑÆíÓíÉ."
+LOCAL4="Óæİ íÊã ÇáÇÓÊÈÏÇá Çáßáí ááãáİÇÊ ÇáãæÌæÏÉ İí ÇáİáÇÔÉ\nÈãáİÇÊ äÙÇã ÇáÅŞáÇÚ\n\náä ÊÓÊØíÚ ÅíŞÇİ åĞå ÇáÚãáíÉ ÚäÏãÇ ÊÈÏÃ.\n\nÅÖÛØ Ãæßí ááãÊÇÈÚÉ."
+LOCAL5="ÌÇÑí ÇáÃä äÓÎ ÇáãáİÇÊ ááİáÇÔÉ. \n\nÇáãÑÌæ ÇáÅäÊÙÇÑ ... "
+LOCAL6="ÅäÊåÊ ÚãáíÉ ÇáäÓÎ. \nÅÖÛØ Ãæßí ááÎÑæÌ."
+LOCAL7="áã íÊã ÇáÚËæÑ Úáì Ãí İáÇÔÉ.\n\nÇáãÑÌæ ÅÏÎÇá ÇáİáÇÔÉ æ ÅÚÇÏÉ ÇáãÍÇæáÉ."
+LOCAL8="ÅÎÊÑ ÇáİáÇÔÉ"
+LOCAL9="ÅÎÊÑ ãáİ ÇáÇíÒæ "
+LOCAL10="ÇáÎÑæÌ"
+LOCAL11="ÅäÓÎ Çáì ÇáİáÇÔÉ"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+### .desktop file to be translated too
+# Name[en_US]=Live USB Creator
+# Comment[en_US]=Make bootable Live USB disk

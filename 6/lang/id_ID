@@ -1,0 +1,28 @@
+# Indonesian localization file for Sparky Live USB Creator.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+# Translated to Indonesian by les kompie
+LOCAL1="Pembuat Live USB"
+LOCAL2="Anda harus memilih USB flashdisk yang akan digunakan.\nKlik OK untuk kembali ke menu utama."
+LOCAL3="Anda harus memilih file ISO yang akan digunakan.\nKlik OK untuk kembali ke menu utama."
+LOCAL4="Ini benar-benar akan menimpa isi USB flashdisk anda\n dengan sistem Live yang bootable.\n\nAnda tidak akan bisa membatalkan operasi ini begitu dimulai.\n\ nKlik OK untuk melanjutkan."
+LOCAL5="Menyalin file ke USB flashdisk sekarang.\n\nMohon tunggu..."
+LOCAL6="Proses penyalinan ke USB flashdisk selesai.\nKlik OK untuk keluar."
+LOCAL7="USB flashdisk tidak ditemukan.\n\nMasukkan USB flashdisk dan coba lagi."
+LOCAL8="Pilih USB flashdisk"
+LOCAL9="Pilih file ISO"
+LOCAL10="Keluar"
+LOCAL11="Salin ke USB flashdisk"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+### .desktop file to be translated to
+# Name[id_ID]=Pembuat Live USB
+# Comment[id_ID]=Membuat Live USB flashdisk yang bisa di-boot
+

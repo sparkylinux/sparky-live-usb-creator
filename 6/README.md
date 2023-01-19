@@ -17,3 +17,27 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Dependencies:
+-------------
+coreutils
+gawk
+grep
+mount
+sparky-remsu (>= 0.2.17)
+yad
+zenity
+sed
+fdisk
+util-linux
+e2fsprogs
+
+Install:
+-------------
+su (or sudo) 
+./install.sh
+
+Uninstall:
+-------------
+su (or sudo)
+./install.sh uninstall
