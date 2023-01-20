@@ -102,28 +102,42 @@ fi
 UMDEVS1=`mount | grep $1 | awk '{print $1}'`
 umount "$UMDEVS1"
 #do the copy
-$(dd if=/tmp/redir/sparkylinux-persistent.iso of=/dev/$1 bs=4M && sync
-sleep 10) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
-sleep 1
+if [ ! -d /mnt/part1 ]; then
+	mkdir -p /mnt/part1
+fi
+if [ ! -d /mnt/part3 ]; then
+	mkdir -p /mnt/part3
+fi
+$(dd if=/tmp/redir/sparkylinux-persistent.iso of=/dev/$1 bs=4M && sync) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
+
+MOUNT1=`fdisk -l /dev/$1 | tail -n2 | grep $1 | awk -F " " '{print $1}' | head -n1`
+mount -t iso9660 "$MOUNT1" /mnt/part1
 
 ### STEP3: create 3rd persistent partition on usb
 #TRYMOUNT=`cat /proc/mounts | grep /dev/$DEVS`
 #if [ "$TRYMOUNT" = "" ]; then
-#	$DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
-#	exit 0
+#	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\nWait until the USB disk will be mounted, then click OK.\n"
 #fi
+TRYMOUNT2=`cat /proc/mounts | grep /dev/$DEVS`
+if [ "$TRYMOUNT2" = "" ]; then
+	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
+	exit 0
+fi
 # preper 3rd partition on USB
 $(fdisk /dev/$DEVS <<<$'n\np\n\n\n\nw'
 ) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
 sleep 1
 GET3PART=`blkid | grep /dev/$DEVS | grep 3: | awk -F " " '{print $1}' | cut -d ":" -f 1`
 $(mkfs.ext4 -L persistence $GET3PART
-mount $GET3PART /mnt
-echo '/ union' >/mnt/persistence.conf
+mount $GET3PART /mnt/part3
+echo '/ union' >/mnt/part3/persistence.conf
 sync
-umount /mnt
+umount /mnt/part3
+umount /mnt/part1
 ) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
 rm -rf /tmp/redir
+rm -rf /mnt/part3
+rm -rf /mnt/part1
 $DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL6" $OKBUTTON
 }
 
