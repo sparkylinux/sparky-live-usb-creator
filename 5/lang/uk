@@ -1,0 +1,19 @@
+# Файл української локалізації для Sparky Live USB Creator.
+# Ukrainian localization made by XalisRatt 2023/01/19 (I almost never use email, so contact me on matrix instead <@xalisqull:arcticfoxes.net> or discord <XalisRatt#2308>
+# Copyright 2015 PaweЕ‚ "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/22
+# Under the GNU GPL v2
+# Last update by pavroo 2018/08/02
+LOCAL1="Live USB Creator"
+LOCAL2="Оберіть USB-накопичувач для використання. \nНатисніть OK, щоб повернутися до головного меню."
+LOCAL3="Оберіть ISO образ для використання. \nНатисніть OK, щоб повернутися до головного меню."
+LOCAL4="Це повністю замінить зміст вашого USB-накопичувача\nЗавантажувальною Системою Live.\n\nВи не зможете скасувати цю операцію після її початку.\n\nНатисніть OK, щоб продовжити."
+LOCAL5="Копіювання файлів на USB-накопичувач. \n\nБудь ласка,зачекайте..."
+LOCAL6="Копіювання на USB-накопичувач завершено. \nНатисніть OK, щоб вийти."
+LOCAL7="USB-накопичувачі не знайдено.\n\nБудь ласка, вставте USB-накопичувач та спробуйте ще раз."
+LOCAL8="Оберіть USB-накопичувач"
+LOCAL9="Оберіть файл ISO"
+LOCAL10="Вийти"
+LOCAL11="Копіювати на USB-накопичувач"
+### .desktop file to be translated too
+# Name[uk]= Створювач Live USB
+# Comment[uk]=Створити завантажувальний Live USB-накопичувач
