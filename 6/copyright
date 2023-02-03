@@ -2,7 +2,7 @@ Upstream Author(s):
     Paweł "pavroo" Pijanowski <pavroo@onet.eu> 
 
 Files: *
-    Copyright (C) 2013-2022 Paweł Pijanowski
+    Copyright (C) 2013-2023 Paweł Pijanowski
     License: GPL-2
 
 File: ar
@@ -62,6 +62,10 @@ File: ru
 File: se
     Copyright (C) 2015 Johnny Rosenberg <johnny.a.rosenberg@gmail.com>
     License: GPL-2
+
+File: uk
+    Copyright 2023 XalisRatt
+    License: GNU GPL-3
 
 File: zh_CN
     Copyright (C) 2021 OkayPJ
