@@ -23,6 +23,7 @@ LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
 LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
 LOCAL21="Preparing persistent partition on USB stick, please wait..."
 LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
 ### .desktop file to be translated too
 # Name[ja_JP]=Live USB 作成ツール
 # Comment[ja_JP]=ライブ起動できる USB ディスク（メモリスティック）を作成

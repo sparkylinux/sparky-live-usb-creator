@@ -5,7 +5,7 @@
 #
 # Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
 # Copyright 2014-2023 Paweł Pijanowski under the GPL V2
-# Last update 2023/02/03 by pavroo
+# Last update 2023/03/25 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
@@ -63,7 +63,14 @@ if [ "$testroot" != "root" ]; then
 	echo "must me root... exiting..."
 	exit 1
 fi
-
+if [ -f /tmp/usb-creator/usb-creator-log.txt ]; then
+	rm -fr /tmp/usb-creator
+fi
+mkdir -p /tmp/usb-creator
+touch /tmp/usb-creator/usb-creator-log.txt
+TMPSIZE=`df -h /tmp`
+echo "TMPSIZE=$TMPSIZE" >> /tmp/usb-creator/usb-creator-log.txt
+ 
 copymenu () {
 if [ "$1" = "(null)" ]; then
 	$DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL2"
@@ -113,23 +120,30 @@ fi
 $(dd if=/tmp/redir/sparkylinux-persistent.iso of=/dev/$1 bs=4M && sync) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
 
 MOUNT1=`fdisk -l /dev/$1 | tail -n2 | grep $1 | awk -F " " '{print $1}' | head -n1`
+echo "MOUNT1=$MOUNT1" >> /tmp/usb-creator/usb-creator-log.txt
 mount -t iso9660 "$MOUNT1" /mnt/part1
 
 ### STEP3: create 3rd persistent partition on usb
-#TRYMOUNT=`cat /proc/mounts | grep /dev/$DEVS`
-#if [ "$TRYMOUNT" = "" ]; then
-#	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\nWait until the USB disk will be mounted, then click OK.\n"
-#fi
-TRYMOUNT2=`cat /proc/mounts | grep /dev/$DEVS`
-if [ "$TRYMOUNT2" = "" ]; then
-	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
-	exit 0
+TRYMOUNT1=`cat /proc/mounts | grep /dev/$DEVS`
+echo "TRYMOUNT1=$TRYMOUNT1" >> /tmp/usb-creator/usb-creator-log.txt
+if [ "$TRYMOUNT1" = "" ]; then
+	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL23\n"
+	sleep 3
+	# mount usb again
+	mount -t iso9660 "$MOUNT1" /mnt/part1
+	TRYMOUNT2=`mount | grep $DEVS`
+	echo "TRYMOUNT2=$TRYMOUNT2" >> /tmp/usb-creator/usb-creator-log.txt
+	if [ "$TRYMOUNT2" = "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
+		exit 0
+	fi
 fi
 # preper 3rd partition on USB
 $(fdisk /dev/$DEVS <<<$'n\np\n\n\n\nw'
 ) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
 sleep 1
 GET3PART=`blkid | grep /dev/$DEVS | grep 3: | awk -F " " '{print $1}' | cut -d ":" -f 1`
+echo "GET3PART=$GET3PART" >> /tmp/usb-creator/usb-creator-log.txt
 $(mkfs.ext4 -L persistence $GET3PART
 mount $GET3PART /mnt/part3
 echo '/ union' >/mnt/part3/persistence.conf
@@ -146,6 +160,7 @@ $DIALOG $TITLE"$TITLETEXT" $TEXT"\n$LOCAL6" $OKBUTTON
 mainmenu () {
 DEVS=""
 DEVS=`ls -l /dev/disk/by-path/*usb* | grep -v "part" | awk '{print $NF}' | awk -F "/" '{print $NF}'`
+echo "DEVS=$DEVS" >> /tmp/usb-creator/usb-creator-log.txt
 if [ "$DEVS" != "" ]; then
 	for i in $DEVS; do
 		USBDRIVESIZE=`grep -m 1 "$i" /proc/partitions | awk '{print $3}'`
@@ -166,6 +181,11 @@ if [ "$retval" = "1" ]; then
 	FREESIZEKB=`expr $USBDRIVESIZE - $SOURCESIZE`
 	FREESIZE=`echo $FREESIZEKB | while read KB dummy;do echo $((KB/1024));done`
 	copymenu $USBDRIVE $PICKSOURCE
+	echo "USBDRIVE=$USBDRIVE" >> /tmp/usb-creator/usb-creator-log.txt
+	echo "PICKSOURCE=$PICKSOURCE" >> /tmp/usb-creator/usb-creator-log.txt
+	echo "SOURCESIZE=$SOURCESIZE" >> /tmp/usb-creator/usb-creator-log.txt
+	echo "FREESIZEKB=$FREESIZEKB" >> /tmp/usb-creator/usb-creator-log.txt
+	echo "FREESIZE=$FREESIZE" >> /tmp/usb-creator/usb-creator-log.txt
 else
 	exit 0
 fi
