@@ -5,7 +5,7 @@
 #
 # Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
 # Copyright 2014-2023 Paweł Pijanowski under the GPL V2
-# Last update 2023/02/03 by pavroo
+# Last update 2023/04/07 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
@@ -81,12 +81,14 @@ if [ $? != 0 ]; then
 fi
 
 #umount `mount | grep $1 | awk '{print $1}'`
-UMDEVS3=`mount | grep $1 | awk '{print $1}' | tail -n1 | grep 3`
+#UMDEVS3=`mount | grep $1 | awk '{print $1}' | tail -n1 | grep 3`
+UMDEVS3=`mount | grep $1 | grep 3 | awk '{print $1}'`
 if [ "$UMDEVS3" != "" ]; then
 	umount "$UMDEVS3"
 	sleep 1
 fi
-UMDEVS1=`mount | grep $1 | awk '{print $1}'`
+#UMDEVS1=`mount | grep $1 | awk '{print $1}'`
+UMDEVS1=`mount | grep $1 | grep 1 | awk '{print $1}'`
 umount "$UMDEVS1"
 
 #do the copy
