@@ -22,6 +22,7 @@ LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
 LOCAL21="Preparing persistent partition on USB stick, please wait..."
 LOCAL22="Sparky Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
 LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
 ### .desktop file to be translated to
 # Name[en_US]=Live USB Creator
 # Comment[en_US]=Make bootable Live USB disk
