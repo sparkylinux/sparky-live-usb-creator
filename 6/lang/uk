@@ -24,6 +24,8 @@ LOCAL21="Готую персистентний розділ на USB-накоп�
 LOCAL22="Створювач Live USB Sparky з Персистентністю.\n\nДля відновлення iso образу Sparky вам знадобиться додатковий вільний простір на диску:"
 LOCAL23="USB disk is not mounted... will try again..."
 LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
 ### .desktop file to be translated too
 # Name[uk]= Створювач Live USB
 # Comment[uk]=Створити завантажувальний Live USB-накопичувач

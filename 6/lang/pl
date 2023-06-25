@@ -24,6 +24,8 @@ LOCAL21="Przygotowywanie partycji persistent na dysku USB, proszę czekać..."
 LOCAL22="Kreator dysku Live USB z zapisem trwałym.\n\nDo przebudowy obrazów iso Sparky wymagana jest dodatkowa przestrzeń dysku:"
 LOCAL23="Dysk USB nie jest zamontowany... spróbuję ponownie..."
 LOCAL24="Może nie działać ze wszystkimi urządzeniami."
+LOCAL25="Wspierane są tylko obrazy iso SparkyLinux.\nWyjście..."
+LOCAL26="Wspierane są tylko obrazy iso SparkyLinux 6.6 i 2023.03 lub nowsze.\nWyjście..."
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=Kreator dysku Live USB
 # Comment[pl_PL]=Utwórz botowalny dysk Live USB

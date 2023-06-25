@@ -5,7 +5,7 @@
 #
 # Remastered for SparkyLinux by Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2014/06/05
 # Copyright 2014-2023 Paweł Pijanowski under the GPL V2
-# Last update 2023/04/10 by pavroo
+# Last update 2023/06/25 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-live-usb-creator"
@@ -113,35 +113,47 @@ fi
 UMDEVS1=`mount | grep $1 | grep 1 | awk '{print $1}'`
 umount "$UMDEVS1"
 #do the copy
-if [ ! -d /mnt/part1 ]; then
-	mkdir -p /mnt/part1
-fi
+#if [ ! -d /mnt/part1 ]; then
+#	mkdir -p /mnt/part1
+#fi
 if [ ! -d /mnt/part3 ]; then
 	mkdir -p /mnt/part3
 fi
 $(dd if=/tmp/redir/sparkylinux-persistent.iso of=/dev/$1 bs=4M && sync) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL5\n"
 
 #MOUNT1=`fdisk -l /dev/$1 | tail -n2 | grep $1 | awk -F " " '{print $1}' | head -n1`
-MOUNT1=`ls -l /dev/disk/by-path/*usb* | awk '{print $NF}' | awk -F "/" '{print $NF}' | grep 1`
-echo "MOUNT1=/dev/$MOUNT1" >> /tmp/usb-creator/usb-creator-log.txt
-mount -t iso9660 "/dev/$MOUNT1" /mnt/part1
+#MOUNT1=`ls -l /dev/disk/by-path/*usb* | awk '{print $NF}' | awk -F "/" '{print $NF}' | grep 1`
+#echo "MOUNT1=/dev/$MOUNT1" >> /tmp/usb-creator/usb-creator-log.txt
+#mount -t iso9660 "/dev/$MOUNT1" /mnt/part1
+#3mount -t iso9660 "/dev/sdb1" /mnt/part1
 
 ### STEP3: create 3rd persistent partition on usb
-TRYMOUNT1=`cat /proc/mounts | grep /dev/$DEVS`
-echo "TRYMOUNT1=$TRYMOUNT1" >> /tmp/usb-creator/usb-creator-log.txt
-if [ "$TRYMOUNT1" = "" ]; then
-	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL23\n"
-	sleep 3
-	# mount usb again
-	mount -t iso9660 "$MOUNT1" /mnt/part1
-	TRYMOUNT2=`mount | grep $DEVS`
-	echo "TRYMOUNT2=$TRYMOUNT2" >> /tmp/usb-creator/usb-creator-log.txt
-	if [ "$TRYMOUNT2" = "" ]; then
-		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
-		exit 0
-	fi
-fi
+#TRYMOUNT1=`cat /proc/mounts | grep /dev/$DEVS`
+#echo "TRYMOUNT1=$TRYMOUNT1" >> /tmp/usb-creator/usb-creator-log.txt
+#if [ "$TRYMOUNT1" = "" ]; then
+#	$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL23\n"
+#	sleep 3
+#	# mount usb again
+#	mount -t iso9660 "$MOUNT1" /mnt/part1
+#	TRYMOUNT2=`mount | grep $DEVS`
+#	echo "TRYMOUNT2=$TRYMOUNT2" >> /tmp/usb-creator/usb-creator-log.txt
+#	if [ "$TRYMOUNT2" = "" ]; then
+#		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL20\n"
+#		exit 0
+#	fi
+#fi
 # preper 3rd partition on USB
+sleep 1
+umount /dev/$DEVS
+umount "$UMDEVS1"
+sleep 1
+# check again and umount
+UMDEV0=`mount | grep $DEVS | grep 3 | awk '{print $1}'`
+if [ "$UMDEV0" != "" ]; then
+	umount /dev/$DEVS
+	umount "$UMDEVS1"
+	sleep 1
+fi
 $(fdisk /dev/$DEVS <<<$'n\np\n\n\n\nw'
 ) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
 sleep 1
@@ -152,7 +164,7 @@ mount $GET3PART /mnt/part3
 echo '/ union' >/mnt/part3/persistence.conf
 sync
 umount /mnt/part3
-umount /mnt/part1
+#umount /mnt/part1
 ) | $DIALOGZEN $TITLEZEN"$TITLETEXT" $TEXT"\n$LOCAL21\n"
 rm -rf /tmp/redir
 rm -rf /mnt/part3
@@ -183,12 +195,65 @@ if [ "$retval" = "1" ]; then
 	#SOURCESIZE=`ls -s $PICKSOURCE | awk -F " " '{print $1}'`
 	#FREESIZEKB=`expr $USBDRIVESIZE - $SOURCESIZE`
 	#FREESIZE=`echo $FREESIZEKB | while read KB dummy;do echo $((KB/1024));done`
-	copymenu $USBDRIVE $PICKSOURCE
 	echo "USBDRIVE=$USBDRIVE" >> /tmp/usb-creator/usb-creator-log.txt
 	echo "PICKSOURCE=$PICKSOURCE" >> /tmp/usb-creator/usb-creator-log.txt
 	#echo "SOURCESIZE=$SOURCESIZE" >> /tmp/usb-creator/usb-creator-log.txt
 	#echo "FREESIZEKB=$FREESIZEKB" >> /tmp/usb-creator/usb-creator-log.txt
 	#cho "FREESIZE=$FREESIZE" >> /tmp/usb-creator/usb-creator-log.txt
+	NOSPARKY=`echo $PICKSOURCE | grep sparky`
+	if [ "$NOSPARKY" = "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL25\n"
+		exit 0
+	fi
+	OLDSPARKY2022=`echo $PICKSOURCE | grep sparkylinux-2022`
+	OLDSPARKY60=`echo $PICKSOURCE | grep sparkylinux-6.0`
+	OLDSPARKY61=`echo $PICKSOURCE | grep sparkylinux-6.1`
+	OLDSPARKY62=`echo $PICKSOURCE | grep sparkylinux-6.2`
+	OLDSPARKY63=`echo $PICKSOURCE | grep sparkylinux-6.3`
+	OLDSPARKY64=`echo $PICKSOURCE | grep sparkylinux-6.4`
+	OLDSPARKY65=`echo $PICKSOURCE | grep sparkylinux-6.5`
+	OLDSPARKY5=`echo $PICKSOURCE | grep sparkylinux-5`
+	OLDSPARKY4=`echo $PICKSOURCE | grep sparkylinux-4`
+
+	if [ "$OLDSPARKY2022" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-2022" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY60" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-6.0" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY61" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-6.1" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY62" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-6.2" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY63" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-6.3" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY64" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-6.4" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY65" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-6.5" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY5" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-5" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	elif [ "$OLDSPARKY4" != "" ]; then
+		$DIALOG $OKBUTTON $TITLE"$TITLETEXT" $TEXT"\n$LOCAL26\n"
+		echo "EXITISO=sparkylinux-4" >> /tmp/usb-creator/usb-creator-log.txt
+		exit 0
+	else
+		copymenu $USBDRIVE $PICKSOURCE
+	fi
 else
 	exit 0
 fi

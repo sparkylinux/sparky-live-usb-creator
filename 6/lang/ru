@@ -24,6 +24,8 @@ LOCAL21="Preparing persistent partition on USB stick, please wait..."
 LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
 LOCAL23="USB disk is not mounted... will try again..."
 LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
 ### .desktop файл был переведён ChourS
 # Name[ru]=Live USB Creator
 # Comment[ru]=Создать загрузочный Live USB-накопитель
