@@ -1,0 +1,31 @@
+# Файл русской локализации для Sparky Live USB Creator.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Под лицензией GNU GPL v2
+# Translated to Russian by ChourS2008
+# Last update 2023/01/18 by pavroo
+LOCAL1="Live USB Creator"
+LOCAL2="Вы должны выбрать USB-накопитель для использования. \nНажмите OK, чтобы вернуться в главное меню."
+LOCAL3="Вы должны выбрать образ ISO для использования. \nНажмите OK, чтобы вернуться в главное меню."
+LOCAL4="Это полностью заменит содержимое вашего USB-накопителя\nс загрузочной системой Live.\n\nВы не сможете отменить эту операцию после ее запуска.\n\nНажмите OK, чтобы продолжить."
+LOCAL5="Копирование файлов на USB-накопитель. \n\nПожалуйста,подождите..."
+LOCAL6="Копирование на USB-накопитель завершено. \nНажмите OK, чтобы выйти."
+LOCAL7="USB-накопители не найдены.\n\nПожалуйста, вставьте USB-накопитель и попробуйте снова."
+LOCAL8="Выберите USB-накопитель"
+LOCAL9="Выберите файл ISO"
+LOCAL10="Выйти"
+LOCAL11="Копировать на USB-накопитель"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop файл был переведён ChourS
+# Name[ru]=Live USB Creator
+# Comment[ru]=Создать загрузочный Live USB-накопитель

@@ -1,0 +1,30 @@
+# Magyar nyelvi fájl a Sparky Live USB készítőhöz.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# GNU GPL v2 szerint
+# Utolsó frissítés pavroo 2023/01/18
+LOCAL1="Live USB készítő"
+LOCAL2="Ki kell válassza a használni kívánt usb meghajtót [pendrive-ot]. \nKattintson az OK-ra a főmenübe visszatéréshez."
+LOCAL3="Ki kell válassza a használni kívánt ISO képfájlt. \nKattintson az OK-ra a főmenübe visszatéréshez."
+LOCAL4="Ez teljesen kicseréli az USB-meghajtó tartalmát\nA Bootable Live Systemre.\n\nHa a művelet elkezdődött, nem tudja leállítani/megszakítani.\n\nKattintson az OK-ra a folytatáshoz."
+LOCAL5="Fájlok másolása az USB-meghajtóra folyamatban. \n\nKérjük, várjon..."
+LOCAL6="A fájlok másolása az USB-meghajtóra befejeződött. \nKattintson az OK-ra a kilépéshez."
+LOCAL7="Nem található USB-meghajtó.\n\nKérjük, helyezzen be egy USB-meghajtót és próbálja újra."
+LOCAL8="Válasszon USB-meghajtót"
+LOCAL9="Válasszon ISO-képfájlt"
+LOCAL10="Kilépés"
+LOCAL11="Másolás az USB-meghajtóra"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .asztalfájl lefordítandó
+# Name[hu]=Live USB készítő
+# Comment[hu]=Bootolható Live USB lemezt készít

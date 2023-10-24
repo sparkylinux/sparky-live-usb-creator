@@ -1,0 +1,30 @@
+# Greek localization file for Sparky Live USB Creator by jidan
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+LOCAL1="Δημιουργία Live USB"
+LOCAL2="Θα πρέπει να επιλέξετε το στικάκι usb που θα χρησιμοποιηθεί. \nΕπιλέξτε OK για επιστροφή στο κεντρικό μενού"
+LOCAL3="Θα πρέπει να επιλέξετε το αρχείο ISO που θα χρησιμοποιηθεί. \nΕπιλέξτε OK για επιστροφή στο κεντρικό μενού."
+LOCAL4="Η διαδικασία θα αντικαταστήσει πλήρως τα περιεχόμενα του USB στικ\nμε το Εκκινήσιμο Live σύστημα.\n\nΕφόσον εκτελεστεί δεν υπάρχει δυνατότητα να αναστραφεί.\n\nΕπιλέξτε OK για συνέχεια."
+LOCAL5="Αντιγράφονται αρχεία στο USB στικ τώρα. \n\nΠαρακαλώ περιμένετε..."
+LOCAL6="Η αντιγραφή στο USB στικ ολοκληρώθηκε. \nΕπιλέξτε OK για τερματισμό."
+LOCAL7="Δεν εντοπίστηκαν στικάκια USB.\n\nPΕισάγετε ένα και δοκιμάστε ξανά."
+LOCAL8="Επιλέξτε ένα USB στικ"
+LOCAL9="Επιλέξτε ένα αρχείο ISO"
+LOCAL10="Τερματισμός"
+LOCAL11="Αντιγραφή στο USB στικ"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop file to be translated to
+# Name[el_GR]=Δημιουργία Live USB
+# Comment[el_GR]=Δημιουργήστε εκκινήσιμο Live USB στικ

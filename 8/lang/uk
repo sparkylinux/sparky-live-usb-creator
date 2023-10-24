@@ -1,0 +1,31 @@
+# Файл української локалізації для Sparky Live USB Creator.
+# Ukrainian localization made by XalisRatt 2023/02/01 (matrix : <@xalisqull:arcticfoxes.net> discord: <XalisRatt#2308>)
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Під ліцензією GNU GPL v2
+# Last update 2023/01/18 by pavroo
+LOCAL1="Live USB Creator"
+LOCAL2="Оберіть USB-накопичувач для використання. \nНатисніть OK, щоб повернутися до головного меню."
+LOCAL3="Оберіть ISO образ для використання. \nНатисніть OK, щоб повернутися до головного меню."
+LOCAL4="Це повністю замінить зміст вашого USB-накопичувача\nЗавантажувальною Системою Live.\n\nВи не зможете скасувати цю операцію після її початку.\n\nНатисніть OK, щоб продовжити."
+LOCAL5="Копіювання файлів на USB-накопичувач. \n\nБудь ласка,зачекайте..."
+LOCAL6="Копіювання на USB-накопичувач завершено. \nНатисніть OK, щоб вийти."
+LOCAL7="USB-накопичувачі не знайдено.\n\nБудь ласка, вставте USB-накопичувач та спробуйте ще раз."
+LOCAL8="Оберіть USB-накопичувач"
+LOCAL9="Оберіть файл ISO"
+LOCAL10="Вийти"
+LOCAL11="Копіювати на USB-накопичувач"
+LOCAL12="Є вільний простір на USB-накопичувачі:"
+LOCAL13="Вільний простір буде використовуватися для збереження вашої live сессії."
+LOCAL14="Це працює лише з iso образами SparkyLinux."
+LOCAL15="Відтворюю образ iso... Будь ласка, зачекайте..."
+LOCAL16="Щось пішло не так, новий iso образ не існує, Виходжу..."
+LOCAL20="USB-накопичувач не змонтовано... не можу налаштувати персистентність, виходжу..."
+LOCAL21="Готую персистентний розділ на USB-накопичувачі, будь ласка, зачекайте..."
+LOCAL22="Створювач Live USB Sparky з Персистентністю.\n\nДля відновлення iso образу Sparky вам знадобиться додатковий вільний простір на диску:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop file to be translated too
+# Name[uk]= Створювач Live USB
+# Comment[uk]=Створити завантажувальний Live USB-накопичувач

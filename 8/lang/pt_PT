@@ -1,0 +1,30 @@
+# Arquivo de localização para Portugues de Portugal do Sparky Live USB Creator.
+# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Tuesday 26 January 21:46:00 WET 2016
+# Sob a Licença GNU GPL v2
+# Last update 2023/01/18 by pavroo
+LOCAL1="Live USB Creator"
+LOCAL2="É necessário selecionar uma driver usb para usar. \nClique em OK para retornar ao menu principal."
+LOCAL3="É necessário selecionar uma imagem ISO para usar. \nClique em OK para retornar ao menu principal."
+LOCAL4="Isso irá substituir completamente o conteúdo do seu drive USB com o Sistema de Arranque.\n\nNăo será possível anular esta operação assim que iniciar.\n\nClique em OK para continuar."
+LOCAL5="Cópia de arquivos para driver USB a iniciar \n\nPor favor, espere..."
+LOCAL6="Copia para a driver USB concluída. \nClique em OK para sair."
+LOCAL7="Não foram encontrados drivers USB.\n\nPor favor, insira uma driver USB e tente novamente."
+LOCAL8="Escolha uma driver USB"
+LOCAL9="Escolha a Imagem ISO"
+LOCAL10="Sair"
+LOCAL11="Copia para a dirver USB"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### Arquivo a ser traduzido também .desktop
+# Name[pt_PT]=Live USB Creator
+# Comment[pt_PT]=Faça disco de arranque USB

@@ -1,0 +1,30 @@
+# Chinese(Simplified) localization file for Sparky Live USB Creator by OkayPJ
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+LOCAL1="Live USB 创建工具"
+LOCAL2="您必须选择一个需要使用的 U 盘。\n点击 OK 返回主菜单。"
+LOCAL3="您必须选择一个需要使用的 ISO 镜像\n点击 OK 返回主菜单。"
+LOCAL4="本次操作将会抹除您的 USB 驱动器中原有的一切内容，\n并将其替换为可启动的临场版（Live）系统\n\n操作开时后，您将无法撤销此次操\n\n点击 OK 继续"
+LOCAL5="拷贝文件到 U 盘中。\n\n请稍后…"
+LOCAL6="拷贝文件到 U 盘中完成。\n点击 OK 退出。"
+LOCAL7="没有找到 U 盘。\n\n请插入 U 盘并重试。"
+LOCAL8="选择一个 U 盘"
+LOCAL9="选择一个 ISO 镜像"
+LOCAL10="退出"
+LOCAL11="拷贝到 U 盘中"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop file to be translated to
+# Name[zh_CN]=Live USB 创建工具
+# Comment[zh_CN]=制作可启动的临场（Live）U 盘

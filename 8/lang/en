@@ -1,0 +1,30 @@
+# English localization file for Sparky Live USB Creator.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+LOCAL1="Live USB Creator"
+LOCAL2="You must select a usb key to use. \nClick OK to return to main menu."
+LOCAL3="You must select an ISO image to use. \nClick OK to return to main menu."
+LOCAL4="This will completely replace the contents of your USB drive\nwith the Bootable Live System.\n\nYou will not be able to undo this operation once it starts.\n\nClick OK to continue."
+LOCAL5="Copying files to USB Key now. \n\nPlease Wait..."
+LOCAL6="Copy to USB key completed. \nClick OK to quit."
+LOCAL7="No USB Keys found.\n\nPlease insert a USB Key and try again."
+LOCAL8="Choose a USB Key"
+LOCAL9="Choose a ISO Image"
+LOCAL10="Quit"
+LOCAL11="Copy to USB Key"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Sparky Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop file to be translated to
+# Name[en_US]=Live USB Creator
+# Comment[en_US]=Make bootable Live USB disk

@@ -1,0 +1,31 @@
+# Polish localization file for Sparky Live USB Creator.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+# Translated to Polish by pavroo
+LOCAL1="Kreator dysku Live USB"
+LOCAL2="Musisz wybrać dysk USB. \nKliknij OK aby powrócić do głównego menu."
+LOCAL3="Musisz wybrać obraz ISO. \nKliknij OK aby powrócić do głównego menu."
+LOCAL4="Ta operacja całkowicie usunie zawartość dysku USB i nagra bootowalny system Live.\n\n Nie będzie możliwości zatrzymania tego procesu, w chwili gdy się rozpocznie .\n\nKliknij OK aby kontynuować."
+LOCAL5="Kopiowanie plików na dysk USB. \n\nProszę czekać..."
+LOCAL6="Kopiowanie plików na dysk USB zakończone. \nKliknik OK aby zakończyć."
+LOCAL7="Nie znaleziono dysku USB.\n\nPodłącz dysk USB i spróbuj ponownie."
+LOCAL8="Wybierz dysk USB"
+LOCAL9="Wybierz obraz ISO"
+LOCAL10="Zakończ"
+LOCAL11="Kopiuj na dysk USB"
+LOCAL12="Na dysku USB dostępna jest wolna przestrzeń:"
+LOCAL13="Wolna przestrzeń zostanie użyta do do zapisu Twojej sesji live."
+LOCAL14="To działa tylko z obrazami iso SparkyLinux."
+LOCAL15="Tworzenie nowego obrazu iso... proszę czekać..."
+LOCAL16="Coś poszło źle, nowy obraz iso nie istnieje, kończenie..."
+LOCAL20="Dysk USB nie jest zamontowany... NIE można skonfigurować persistence, wyjście..."
+LOCAL21="Przygotowywanie partycji persistent na dysku USB, proszę czekać..."
+LOCAL22="Kreator dysku Live USB z zapisem trwałym.\n\nDo przebudowy obrazów iso Sparky wymagana jest dodatkowa przestrzeń dysku:"
+LOCAL23="Dysk USB nie jest zamontowany... spróbuję ponownie..."
+LOCAL24="Może nie działać ze wszystkimi urządzeniami."
+LOCAL25="Wspierane są tylko obrazy iso SparkyLinux.\nWyjście..."
+LOCAL26="Wspierane są tylko obrazy iso SparkyLinux 6.6 i 2023.03 lub nowsze.\nWyjście..."
+### .desktop file, również do przetłumaczenia
+# Name[pl_PL]=Kreator dysku Live USB
+# Comment[pl_PL]=Utwórz botowalny dysk Live USB

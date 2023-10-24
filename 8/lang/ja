@@ -1,0 +1,32 @@
+# Japanese localization file for Sparky Live USB Creator.
+# Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+# Translated to Japanese by BALLOON a.k.a. Fu-sen.
+# Translated to Japanese by FuRuYa7.
+LOCAL1="Live USB 作成ツール"
+LOCAL2="使用する USB メモリスティックを選択する必要があります。\nOK のクリックでメインメニューへ戻ります。"
+LOCAL3="使用する ISO イメージを選択する必要があります。\nOK のクリックでメインメニューへ戻ります。"
+LOCAL4="これは完全に USB メモリスティックの内容を書き換えます。\n起動可能なライブシステムになります。\n\n実行したら、この操作は元に戻せません。\n\nOK のクリックで続けます。"
+LOCAL5="USB メモリスティックへファイルをコピーしています。\n\nお待ち下さい... "
+LOCAL6="USB メモリスティックへコピーしました。\nOK のクリックで終了します。"
+LOCAL7="USB メモリスティックが見つかりません。\n\nUSB メモリスティックを挿して、もう一度試してください。"
+LOCAL8="USB メモリスティックを選んで下さい"
+LOCAL9="ISO イメージを選んで下さい"
+LOCAL10="終了"
+LOCAL11="USB メモリスティックへコピー"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop file to be translated too
+# Name[ja_JP]=Live USB 作成ツール
+# Comment[ja_JP]=ライブ起動できる USB ディスク（メモリスティック）を作成

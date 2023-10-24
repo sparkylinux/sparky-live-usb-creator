@@ -1,0 +1,31 @@
+# Spanish (es_ES) localization file for Sparky Live USB Creator.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/21
+# Under the GNU GPL v2
+# Last update 2023/01/18 by pavroo
+# Translated by depaz
+LOCAL1="Creador de Live USB"
+LOCAL2="Debe escoger una memoria USB a usar. \nPulse OK para volver al menú principal."
+LOCAL3="Debe escoger una imagen ISO a usar. \nPulse OK para volver al menú principal."
+LOCAL4="Se reemplazará todo el contenido de su unidad USB con el sistema arrancable en vivo.\n\nNo podrá revertir esta operación una vez haya iniciado.\n\nPulse OK para continuar."
+LOCAL5="Copiando archivos a memoria USB. \n\nPor favor, espere..."
+LOCAL6="Copia a memoria USB completada. \nPulse Ok para salir."
+LOCAL7="No se encontraron memorias USB.\n\nPor favor, inserte una memoria USB e inténtelo de nuevo."
+LOCAL8="Escoja una memoria USB"
+LOCAL9="Escoja una imagen ISO"
+LOCAL10="Salir"
+LOCAL11="Copiar a memoria USB"
+LOCAL12="There is free space on USB stick:"
+LOCAL13="The free space will be used to save your live sesion."
+LOCAL14="This works with SparkyLinux iso images only."
+LOCAL15="Re-creating the iso image... please wait..."
+LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
+LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
+LOCAL21="Preparing persistent partition on USB stick, please wait..."
+LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
+LOCAL23="USB disk is not mounted... will try again..."
+LOCAL24="It may not work with all devices."
+LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
+LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+### .desktop file to be translated to
+# Name[es_ES]=Creador de Live USB
+# Comment[es_ES]=Crear un disco Live USB arrancable
