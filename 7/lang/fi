@@ -1,0 +1,30 @@
+# Suomenkielinen lokalisointitiedosto Sparky Live USB Creatorille.
+# Tekijänoikeus 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 21.10.2015
+# GNU GPL v2:n alla
+# Viimeisin päivitys 18.1.2023 pavroo
+LOCAL1="Live USB Creator"
+LOCAL2="Sinun on valittava käytettävä USB-avain. \nPalaa päävalikkoon napsauttamalla OK."
+LOCAL3="Sinun on valittava käytettävä ISO-kuva. \nPalaa päävalikkoon napsauttamalla OK."
+LOCAL4="Tämä korvaa USB-asemasi sisällön kokonaan\nBootable Live Systemillä.\n\nEt voi peruuttaa tätä toimintoa sen alkaessa.\n\nJatka napsauttamalla OK."
+LOCAL5="Kopioidaan tiedostoja USB-avaimelle nyt. \n\nOdota..."
+LOCAL6="Kopioi USB-avaimelle. \nLopeta napsauttamalla OK."
+LOCAL7="USB-avaimia ei löydy.\n\nAseta USB-avain ja yritä uudelleen."
+LOCAL8="Valitse USB-avain"
+LOCAL9="Valitse ISO-kuva"
+LOCAL10="Lopeta"
+LOCAL11="Kopioi USB-avaimeen"
+LOCAL12="USB-tikulla on vapaata tilaa:"
+LOCAL13="Vapaa tila käytetään live-istunnon tallentamiseen."
+LOCAL14="Tämä toimii vain SparkyLinux iso -kuvien kanssa."
+LOCAL15="Luodaan iso-kuvaa uudelleen... ole hyvä ja odota..."
+LOCAL16="Jotain meni pieleen, uutta iso-kuvaa ei ole olemassa, lopetetaan nyt..."
+LOCAL20="USB-levyä ei ole asennettu... EI voi asettaa pysyvyyttä, poistutaan..."
+LOCAL21="Valmistetaan pysyvää osiota USB-tikulla, odota..."
+LOCAL22="Sparky Live USB Creator ja pysyvyys.\n\nSparky iso -kuvan uudelleenrakentaminen tarvitset ylimääräistä vapaata levytilaa:"
+LOCAL23="USB-levyä ei ole asennettu... yrittää uudelleen..."
+LOCAL24="Se ei ehkä toimi kaikkien laitteiden kanssa."
+LOCAL25="Vain SparkyLinux iso -kuvia tuetaan.\nPoistutaan nyt..."
+LOCAL26="Vain SparkyLinux iso -kuvat 6.6 ja 2023.03 tai uudemmat tuetut.\nPoistutaan nyt..."
+### .desktop-tiedosto, johon käännetään
+# Name[en_US]=Live USB Creator
+# Comment[en_US]=Tee käynnistettävä Live-USB-levy
