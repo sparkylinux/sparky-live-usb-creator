@@ -1,31 +1,31 @@
 # German localization file for Sparky Live USB Creator.
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/10/25
 # Under the GNU GPL v2
-# Translated to German by Pete B. 2015/10/29
+# Translated to German by Pete B. 2015/10/29 (aktulaisiert 28.05.2025)
 # Last update 2023/01/18 by pavroo
 LOCAL1="Live USB Creator"
-LOCAL2="Bitte wähle ein USB-Speicher aus. \nKlick um ins Hauptmenü zu gelangen"
-LOCAL3="Bitte wähle ein ISO Image aus. \nKlick um ins Hauptmenü zu gelangen"
-LOCAL4="Das Erstellen des bootbaren Live-Systems überschreibt\nalle auf dem USB-Speicher befindlichen Daten.\n\nDieser Vorgang kann nicht rückgängig gemacht werden!\n\nKlicke auf OK um fortzufahren"
-LOCAL5="Die Dateien werden jetzt kopiert. \n\nBitte warten..."
-LOCAL6="Kopiervorgang abgeschlossen. \nZum Beenden auf OK klicken"
-LOCAL7="Es wurde kein USB-Speicher gefunden.\n\nBitte ein USB-Speicher anschließen und erneut versuchen."
-LOCAL8="Wähle ein USB-Speicher"
-LOCAL9="Wähle ein ISO Image"
+LOCAL2="Sie müssen einen USB-Speicher auswählen, den Sie verwenden möchten. \nKlicken Sie auf OK, um zum Hauptmenü zurückzukehren."
+LOCAL3="Sie müssen ein ISO-Image auswählen, das Sie verwenden möchten. \nKlicken Sie auf OK, um zum Hauptmenü zurückzukehren."
+LOCAL4="Dadurch wird der Inhalt Ihres USB-Laufwerks vollständig durch\ndas bootfähige Live-System ersetzt.\n\nSie können diese Operation nicht rückgängig machen, sobald diese beginnt.\n\nKlicken Sie zum Fortfahren auf OK."
+LOCAL5="Dateien werden jetzt auf den USB-Speicher kopiert. \n\nBitte warten Sie ..."
+LOCAL6="Kopieren auf USB-Speicher abgeschlossen. \nKlicken Sie zum Beenden auf OK."
+LOCAL7="Keine USB-Speicher gefunden.\n\nBitte stecken Sie einen USB-Speicher ein und versuchen Sie es erneut."
+LOCAL8="Einen USB-Speicher wählen"
+LOCAL9="Ein ISO-Image wählen"
 LOCAL10="Beenden"
-LOCAL11="Kopiere ISO auf USB-Speicher"
-LOCAL12="There is free space on USB stick:"
-LOCAL13="The free space will be used to save your live sesion."
-LOCAL14="This works with SparkyLinux iso images only."
-LOCAL15="Re-creating the iso image... please wait..."
-LOCAL16="Something went wrong, the new iso image do not exist, exiting now..."
-LOCAL20="USB disk is not mounted... can NOT set persistence, exiting..."
-LOCAL21="Preparing persistent partition on USB stick, please wait..."
-LOCAL22="Live USB Creator with Persistence.\n\nTo rebuild Sparky iso image you need extra free disk space:"
-LOCAL23="USB disk is not mounted... will try again..."
-LOCAL24="It may not work with all devices."
-LOCAL25="Only SparkyLinux iso images supported.\nExiting now..."
-LOCAL26="Only SparkyLinux iso images 6.6 and 2023.03 or newer supported.\nExiting now..."
+LOCAL11="Auf USB-Speicher kopieren"
+LOCAL12="Es gibt freien Platz auf dem USB-Stick:"
+LOCAL13="Der freie Platz wird verwendet, um Ihre Live-Sitzung zu speichern."
+LOCAL14="Dies funktioniert nur mit SparkyLinux-Iso-Images."
+LOCAL15="Neuerstellung des Iso-Image ... bitte warten Sie ..."
+LOCAL16="Irgendetwas ist schief gelaufen, das neue Iso-Image existiert nicht. Wird jetzt beendet ..."
+LOCAL20="USB-Datenträger ist nicht gemountet ... Persistenz kann NICHT eingestellt werden. Wird beendet ..."
+LOCAL21="Vorbereitung einer persistenten Partition auf dem USB-Stick, bitte warten Sie ..."
+LOCAL22="Sparky Live USB Creator mit Persistenz.\n\nUm das Sparky-Iso-Image neu zu erstellen, benötigen Sie zusätzlichen freien Speicherplatz:"
+LOCAL23="USB-Datenträger ist nicht gemountet ... werden es wieder versuchen ..."
+LOCAL24="Es funktioniert möglicherweise nicht mit allen Geräten."
+LOCAL25="Nur SparkyLinux-Iso-Images werden unterstützt.\nWird jetzt beendet ..."
+LOCAL26="Nur SparkyLinux-Iso-Images 6.6 und 2023.03 oder neuer werden unterstützt.\nWird jetzt beendet ..."
 ### .desktop file to be translated too
 # Name[de_DE]=Live USB Creator
-# Comment[de_DE]=Erstellt einen bootbaren USB-Speicher mit Live-System
+# Comment[de_DE]=Bootfähigen Live-USB-Datenträger anfertigen
